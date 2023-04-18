@@ -30,6 +30,7 @@ html, body{
       display:flex;
       flex-direction:column;
       gap:34px;
+      cursor:pointer;
 
 }
 .title{
