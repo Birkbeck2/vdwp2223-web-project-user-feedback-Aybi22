@@ -15,6 +15,7 @@ html, body{
            border:1px solid gainsboro;
            text-align: center;
            box-shadow:2px 4px 5px red;
+           background:pink;
 }
 
 .ratings-container{
@@ -40,6 +41,7 @@ html, body{
 
 .heading{
        font-size:45px;
+       
        
 }
 
