@@ -14,7 +14,7 @@ html, body{
            max-width:800px;
            border:1px solid gainsboro;
            text-align: center;
-           box-shadow:2px 4px 5px red;
+           box-shadow:2px 4px 5px;
            background:pink;
 }
 
@@ -36,7 +36,16 @@ html, body{
         
 }
 
-
+a{
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+         background:green;
+         padding:10px;
+         transition:1s;
+         
+}
 
 
 .heading{
@@ -53,4 +62,9 @@ html, body{
      font-size:23px;
      margin:43px auto;
      width:300px;
+}
+.btn:hover{
+        box-shadow:2px 1px 2px black;
+        transition:0.3s;
+       
 }
