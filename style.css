@@ -54,10 +54,11 @@ html, body{
 
 
 .top-title{
-        font-size:34px;
+        font-size:44px;
         color:#FFFFFF;
         text-transform:uppercase; 
-        font-weight:900;    
+        font-weight:900;
+        text-align:center;    
 }
 
 a{
