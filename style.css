@@ -45,7 +45,10 @@ html, body{
         border-radius:12px;
 }
 
-
+.page-container{
+             display:grid;
+             grid-template-columns: 1fr 1fr;
+}
 
 
 
