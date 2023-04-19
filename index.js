@@ -1,15 +1,20 @@
 const ratingElements=document.querySelectorAll(".rating");
 ratingElements.forEach((ratingElement) => {
 ratingElement.addEventListener("click", (event) =>{
-    console.log(event.target.innerText|| event.target.parentNode.innerText);
+    removeActive();
     event.target.classList.add("active");
-    event.target.parentNode.classList.add("active");
-
-
+    event.target.parentNode.classList.add("active");});
 
 });
 
+function removeActive(){
+ratingElements.forEach((ratingElement)=>{
+    ratingElement.classList.remove("active");
+}
 });
+
+
+
 
 let selectedRating="";
 ratingElement.addEventListener("click", (event) =>{
