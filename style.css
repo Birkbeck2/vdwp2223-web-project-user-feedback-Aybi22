@@ -20,6 +20,8 @@ html, body{
            text-align: center;
            box-shadow:2px 4px 5px;
            background:pink;
+           display:flex;
+           flex-direction:column;
 }
 
 .ratings-container{
