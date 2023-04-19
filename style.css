@@ -93,7 +93,11 @@ a:hover{
      
      padding:14px;
 }
-
+.bold{
+       font-weight:900;
+       font-size:22px;
+       
+}
 
 header{
         background:seagreen;
