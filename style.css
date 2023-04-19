@@ -98,7 +98,10 @@ a:hover{
        font-size:22px;
        
 }
-
+.name{
+    font-weight:900;
+    margin-left:auto;
+}
 header{
        display: flex;
         justify-content:space-around;
