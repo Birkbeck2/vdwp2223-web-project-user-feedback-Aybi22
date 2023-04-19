@@ -50,8 +50,11 @@ const ratingElements=document.querySelectorAll(".rating");
 ratingElements.forEach((ratingElement) => {
 ratingElement.addEventListener("click", (event) =>{
     removeActive();
+    selectedRating=
+    event.target.innerText|| event.target.parentNode.innerText;
     event.target.classList.add("active");
-    event.target.parentNode.classList.add("active");});
+    event.target.parentNode.classList.add("active");
+});
 
 });
 
@@ -64,21 +67,22 @@ ratingElements.forEach((ratingElement)=>{
 
 
 
+
 let selectedRating="";
 
-
-
-
-
-
-
-
-const btnElement=document.getElementById('btn');
-const containerElement=document.getElementById('container');
-btnElement.addEventListener('click',()=>{
+const btnElement=document.querySelector(".btn");
+const headingElement=document.querySelector(".heading");
+btnElement.addEventListener("click",()=>{
     if(selectedRating !=="") {
-containerElement.innerHTML=`thank you`;
+headingElement.innerHTML=`Thank you!
+<br>
+<br>
     
+Feedback:${selectedRating} <br><br>
+
+<p>you feedback is very important to us!</p>
+`
+
 }
 
 });
