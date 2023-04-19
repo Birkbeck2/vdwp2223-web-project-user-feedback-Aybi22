@@ -82,3 +82,8 @@ containerElement.innerHTML=`thank you`;
 }
 
 });
+
+
+function myFunction() {
+    document.getElementById("myForm").submit();
+  }
