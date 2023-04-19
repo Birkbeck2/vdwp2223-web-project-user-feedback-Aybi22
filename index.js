@@ -64,7 +64,7 @@ ratingElements.forEach((ratingElement)=>{
 
 
 
-
+let selectedRating="";
 
 
 
