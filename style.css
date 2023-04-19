@@ -33,6 +33,19 @@ html, body{
       cursor:pointer;
 
 }
+
+.rating:hover,
+.rating.active
+{
+        background:skyblue;
+        box-shadow:2px 1px 3px;
+        border-radius:12px;
+}
+
+
+
+
+
 .title{
         
 }
