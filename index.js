@@ -9,17 +9,27 @@ var images=[
 "img6.jpg";
 ];
 
-var Index=0;
-function showImages(){
+var imageNumber = 0;
+var imageLength = images.length - 1;
 
-    document.src=images[0];
-    for(let i=0;    i<images.length;  i++){
-    images[i].style.display="none";
+function changeImage(x) {
+  imageNumber += x;
+//   if you've reached end of array...start over
+  if (imageNumber > imageLength) {
+        imageNumber = 0;
+      } 
+  if (imageNumber < 0) {
+    imageNumber = imageLength;
+  }
+  
+  document.getElementById("images").src = images[imageNumber];
+ 
+  
+  return false;
 }
-Index++;
-if(Index >images.length){Index 1};
-images[1].style.display="block";
-setTimeout(showImages,3000);
+
+function autoRun() {
+  setInterval("changeImage(1)", 5000);
 }
 
 
