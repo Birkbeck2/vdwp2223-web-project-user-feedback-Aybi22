@@ -89,7 +89,7 @@ function myFunction() {
   }
 
   let btn1=document.querySelector(".btn1");
-  btn1.addEventListener("click",()=>{
-    pic.style.display="block";
+  btn1.addEventListener("click",function(showImage){
+    document.querySelector(".pic").style.display="block";
   });
 
