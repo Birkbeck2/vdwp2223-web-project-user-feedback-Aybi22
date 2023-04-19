@@ -75,7 +75,7 @@ button{
         text-transform:uppercase; 
         font-weight:900;
         text-align:center;   
-        flex=1; 
+        flex:1; 
 }
 
 a{
