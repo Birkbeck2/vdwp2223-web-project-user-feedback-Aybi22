@@ -86,6 +86,8 @@ a:hover{
 }
 .pic{
      display:none;
+     margin:auto;
+     outline:4px solid red;
 }
 
 
