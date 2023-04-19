@@ -74,7 +74,10 @@ a:hover{
        
        
 }
-
+#myform{
+    background-color:#FFFFFF;
+    padding:12px;
+}
 .btn{
      border:none;
      background:seagreen;
