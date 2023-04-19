@@ -59,7 +59,7 @@ button{
              display:flex;
              justify-content:center;
              margin-top:45px;
-             gap:5px;
+             
              width: 100%;
 
 }
@@ -97,7 +97,7 @@ a:hover{
 
 header{
         background:seagreen;
-        padding:13px;
+        padding:5px;
         top:0;
         position:sticky;
 }
