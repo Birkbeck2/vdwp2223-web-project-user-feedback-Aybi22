@@ -87,6 +87,8 @@ a:hover{
 header{
         background:seagreen;
         padding:13px;
+        top:0;
+        position:sticky;
 }
 
 .heading{
