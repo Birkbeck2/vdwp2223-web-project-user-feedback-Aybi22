@@ -101,6 +101,7 @@ a:hover{
 }
 .name{
     font-weight:900;
+    text-transform: uppercase;
    
 }
 header{
