@@ -46,9 +46,7 @@ button{
       cursor:pointer;
 
 }
-.picture{
-       float:left
-}
+
 .rating:hover,
 .rating.active
 {
