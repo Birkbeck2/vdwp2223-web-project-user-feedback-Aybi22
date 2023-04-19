@@ -84,6 +84,11 @@ a:hover{
          transition:1s;
          
 }
+.pic{
+     display:none;
+}
+
+
 header{
         background:seagreen;
         padding:13px;
