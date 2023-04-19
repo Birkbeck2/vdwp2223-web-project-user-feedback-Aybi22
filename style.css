@@ -67,7 +67,9 @@ a:hover{
          transition:1s;
          
 }
-
+header{
+        background:seagreen;
+}
 
 .heading{
        font-size:45px;
