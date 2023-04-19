@@ -10,9 +10,9 @@ ratingElement.addEventListener("click", (event) =>{
 function removeActive(){
 ratingElements.forEach((ratingElement)=>{
     ratingElement.classList.remove("active");
-}
-});
 
+});
+}
 
 
 
