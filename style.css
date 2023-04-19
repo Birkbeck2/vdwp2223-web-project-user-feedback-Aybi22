@@ -59,6 +59,7 @@ button{
              justify-content:center;
              margin-top:45px;
              gap:5px;
+             width: 100%;
 
 }
 #time{
