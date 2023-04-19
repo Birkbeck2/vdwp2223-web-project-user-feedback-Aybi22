@@ -16,13 +16,6 @@ ratingElements.forEach((ratingElement)=>{
 
 
 
-let selectedRating="";
-ratingElement.addEventListener("click", (event) =>{
-removeActive();
-
-event.target.innerText|| event.target.parentNode.innerText;
-
-});
 
 
 
