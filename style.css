@@ -6,6 +6,7 @@
 
 html, body{
             font-family:verdana;
+            background:gainsboro;
             
 }
 
@@ -29,6 +30,14 @@ html, body{
            width:800px;
            margin:auto;
 }
+button{
+          border:none;
+          padding:12px;
+          font-weight:bold;
+          background:rgb(345, 233, 200);
+}
+
+
 .rating{
       display:flex;
       flex-direction:column;
