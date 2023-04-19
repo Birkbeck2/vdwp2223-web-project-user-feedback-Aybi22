@@ -72,7 +72,7 @@ button{
 
 .top-title{
         font-size:44px;
-        color:#FFFFFF;
+        
         text-transform:uppercase; 
         font-weight:900;
         text-align:center;    
@@ -101,7 +101,7 @@ a:hover{
 }
 
 header{
-       
+       display: flex;
         padding:5px;
         top:0;
         position:sticky;
