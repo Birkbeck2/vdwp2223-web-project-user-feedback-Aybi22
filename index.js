@@ -91,5 +91,7 @@ function myFunction() {
   let btn1=document.querySelector(".btn1");
   btn1.addEventListener("click",function(showImage){
     document.querySelector(".pic").style.display="block";
-  });
+   setTimeout(showImage,2000);
+
+});
 
