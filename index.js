@@ -38,14 +38,6 @@ window.onload=changeImg;
 
 
 
-
-
-
-
-
-
-
-
 const ratingElements=document.querySelectorAll(".rating");//create a variable to bring all the rating elements
 
 ratingElements.forEach((ratingElement) => { //access each of the rating elements
@@ -53,6 +45,7 @@ ratingElement.addEventListener("click", (event) =>{ //create an event when we cl
     removeActive();//function to remove active elements
     selectedRating=
     event.target.innerText|| event.target.parentNode.innerText;
+    //add active class to the html file
     event.target.classList.add("active");
     event.target.parentNode.classList.add("active");
 });
@@ -90,12 +83,10 @@ Feedback:${selectedRating} <br><br>
 });
 
 
-function myFunction() {
-    document.getElementById("myForm").submit();
-  }
 
-  let btn1=document.querySelector(".btn1");
-  btn1.addEventListener("click",function(showImage){
+
+  let btn1=document.querySelector(".btn1");that 
+  btn1.addEventListener("click",function(showImage){ //create a function that displays the image when the button is clicked
     document.querySelector(".pic").style.display="block";
    setTimeout(showImage,2000);
 
