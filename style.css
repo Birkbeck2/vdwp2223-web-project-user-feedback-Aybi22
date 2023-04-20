@@ -1,9 +1,9 @@
 *{
-    box-sizing:border-box;
+    box-sizing:border-box; /*Include margin and padding in width*/
 }
 
 
-
+/*Define the font family of the page*/
 html, body{
             font-family:verdana;
            
@@ -23,15 +23,15 @@ html, body{
 }
 
 .ratings-container{
-           display:flex;
+           display:flex; /*Create a flex container*/
            flex-wrap:nowrap;
            gap:40px;
-           justify-content:center;
+           justify-content:center;/*Center the flex container*/
            width:800px;
            margin:60px auto;
 }
 button{
-          border:none;
+          border:none;/*Remove button border*/
           padding:12px;
           font-weight:bold;
           background:rgb(345, 233, 200);
@@ -126,10 +126,7 @@ header{
        
        
 }
-#myform{
-    background-color:#FFFFFF;
-    padding:12px;
-}
+
 .btn{
      border:none;
      background:seagreen;
