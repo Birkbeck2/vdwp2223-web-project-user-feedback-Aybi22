@@ -52,10 +52,10 @@ ratingElement.addEventListener("click", (event) =>{ //Create an event when we cl
 
 });
 
-//Remove the active class when clicking on a rating element
+//Remove all the active classes
 function removeActive(){
 ratingElements.forEach((ratingElement)=>{
-    ratingElement.classList.remove("active");
+    ratingElement.classList.remove("active");//Remove the active class for each rating element
 
 });
 }
@@ -67,7 +67,7 @@ let selectedRating="";
 
 const btnElement=document.querySelector(".btn");//Create a variable to select the button element
 const headingElement=document.querySelector(".heading");//Select the heading element
-btnElement.addEventListener("click",()=>{ //create a function to display text when the button is clicked
+btnElement.addEventListener("click",()=>{ //Create a function to display text when the button is clicked
     if(selectedRating !=="") {
 headingElement.innerHTML=`Thank you!
 <br>
