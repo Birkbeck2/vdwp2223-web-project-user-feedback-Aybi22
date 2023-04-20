@@ -1,5 +1,5 @@
 
-
+//variable to store the images
 var images=[
 "images/img1.jpg",
 "images/img2.jpg",
@@ -46,10 +46,11 @@ window.onload=changeImg;
 
 
 
-const ratingElements=document.querySelectorAll(".rating");
-ratingElements.forEach((ratingElement) => {
-ratingElement.addEventListener("click", (event) =>{
-    removeActive();
+const ratingElements=document.querySelectorAll(".rating");//create a variable to bring all the rating elements
+
+ratingElements.forEach((ratingElement) => { //access each of the rating elements
+ratingElement.addEventListener("click", (event) =>{ //create an event when we click on a rating element
+    removeActive();//function to remove active elements
     selectedRating=
     event.target.innerText|| event.target.parentNode.innerText;
     event.target.classList.add("active");
@@ -58,6 +59,7 @@ ratingElement.addEventListener("click", (event) =>{
 
 });
 
+//remove the active class when clicking on a rating element
 function removeActive(){
 ratingElements.forEach((ratingElement)=>{
     ratingElement.classList.remove("active");
@@ -67,7 +69,7 @@ ratingElements.forEach((ratingElement)=>{
 
 
 
-
+//creating a vara=iable for selected ragtings
 let selectedRating="";
 
 const btnElement=document.querySelector(".btn");
