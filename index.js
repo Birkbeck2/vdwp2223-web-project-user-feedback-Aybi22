@@ -75,7 +75,7 @@ headingElement.innerHTML=`Thank you!
 <br>
 <br>
     
-Feedback:${selectedRating} <br><br>
+Feedback:${selectedRating} <br><br> 
 
 <p>you feedback is very important to us!</p>
 `
