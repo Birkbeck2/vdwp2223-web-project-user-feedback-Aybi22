@@ -44,7 +44,7 @@ ratingElements.forEach((ratingElement) => { //Access each of the rating elements
 ratingElement.addEventListener("click", (event) =>{ //Create an event when we click on a rating element
     removeActive();//Function to remove active elements
     selectedRating=
-    event.target.innerText|| event.target.parentNode.innerText;
+    event.target.innerText|| event.target.parentNode.innerText;//Create the value of the inner text when rating is selected
     //Add active class to the html file
     event.target.classList.add("active");//Add active class to the text under the emoji
     event.target.parentNode.classList.add("active");//Add active class to the parent element(the emoji)
