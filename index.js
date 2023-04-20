@@ -38,21 +38,21 @@ window.onload=changeImg;
 
 
 
-const ratingElements=document.querySelectorAll(".rating");//create a variable to bring all the rating elements
+const ratingElements=document.querySelectorAll(".rating");//Create a variable to bring all the rating elements
 
-ratingElements.forEach((ratingElement) => { //access each of the rating elements
-ratingElement.addEventListener("click", (event) =>{ //create an event when we click on a rating element
-    removeActive();//function to remove active elements
+ratingElements.forEach((ratingElement) => { //Access each of the rating elements
+ratingElement.addEventListener("click", (event) =>{ //Create an event when we click on a rating element
+    removeActive();//Function to remove active elements
     selectedRating=
     event.target.innerText|| event.target.parentNode.innerText;
-    //add active class to the html file
-    event.target.classList.add("active");
-    event.target.parentNode.classList.add("active");
+    //Add active class to the html file
+    event.target.classList.add("active");//Add active class to the text under the emoji
+    event.target.parentNode.classList.add("active");//Add active class to the parent element(the emoji)
 });
 
 });
 
-//remove the active class when clicking on a rating element
+//Remove the active class when clicking on a rating element
 function removeActive(){
 ratingElements.forEach((ratingElement)=>{
     ratingElement.classList.remove("active");
@@ -62,12 +62,12 @@ ratingElements.forEach((ratingElement)=>{
 
 
 
-//creating a vara=iable for selected ragtings
+//Create a variable for selected ratings
 let selectedRating="";
 
-const btnElement=document.querySelector(".btn");
-const headingElement=document.querySelector(".heading");
-btnElement.addEventListener("click",()=>{
+const btnElement=document.querySelector(".btn");//Create a variable to select the button element
+const headingElement=document.querySelector(".heading");//Select the heading element
+btnElement.addEventListener("click",()=>{ //create a function to display text when the button is clicked
     if(selectedRating !=="") {
 headingElement.innerHTML=`Thank you!
 <br>
