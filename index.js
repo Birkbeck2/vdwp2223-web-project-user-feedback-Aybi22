@@ -68,8 +68,10 @@ let selectedRating="";
 const btnElement=document.querySelector(".btn");//Create a variable to select the button element
 const headingElement=document.querySelector(".heading");//Select the heading element
 btnElement.addEventListener("click",()=>{ //Create a function to display text when the button is clicked
-    if(selectedRating !=="") {
-headingElement.innerHTML=`Thank you!
+    if(selectedRating !=="") { //Create condition to trigger the function
+
+//Change the HTML element
+headingElement.innerHTML=`Thank you! 
 <br>
 <br>
     
@@ -83,9 +85,7 @@ Feedback:${selectedRating} <br><br>
 });
 
 
-
-
-  let btn1=document.querySelector(".btn1");that 
+let btn1=document.querySelector(".btn1");that 
   btn1.addEventListener("click",function(showImage){ //create a function that displays the image when the button is clicked
     document.querySelector(".pic").style.display="block";
    setTimeout(showImage,2000);
