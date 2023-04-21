@@ -54,7 +54,11 @@ button{
         box-shadow:2px 1px 3px;
         border-radius:12px;
 }
-
+.small{
+      font-size:19px;
+      font-weight:100px;
+      border-left:2px solid black;
+}
 .page-container{
              display:flex;
              justify-content:center;
