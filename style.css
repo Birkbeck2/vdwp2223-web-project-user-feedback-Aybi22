@@ -123,7 +123,9 @@ header{
         position:sticky;
         background-color: pink;
 }
-
+.logo{
+       margin-right:50px;
+}
 .heading{
        font-size:19px;
        background:#FFFFFF;
