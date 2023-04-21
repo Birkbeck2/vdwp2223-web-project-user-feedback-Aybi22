@@ -7,6 +7,10 @@ var images=[
 "images/img4.jpg",
 "images/img5.jpg",
 "images/img6.jpg",
+"images/img8.jpg",
+"images/img9.jpg",
+"images/img10.jpg",
+"images/img11.jpg",
 ];
 
 var i = 0; 			// Start Point
