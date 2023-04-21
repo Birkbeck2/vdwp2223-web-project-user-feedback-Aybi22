@@ -59,6 +59,7 @@ button{
       font-weight:100px;
       border-left:2px solid black;
       padding:10px;
+      color:seagreen;
 }
 .page-container{
              display:flex;
