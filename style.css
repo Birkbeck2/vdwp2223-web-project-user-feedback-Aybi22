@@ -110,6 +110,8 @@ a:hover{
 .name{
     font-weight:900;
     text-transform: uppercase;
+    border-left:2px solid black;
+    padding:3px;
    
 }
 header{
