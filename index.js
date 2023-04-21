@@ -40,8 +40,8 @@ function changeImg(){
 window.onload=changeImg;
 
 const small=document.querySelector(".small");
-small.addEventListener("click",()=> {
-  this.style.backgroundColor="red";
+small.addEventListener("click", function (changeColor) {
+  document.querySelector(".small").style.backgroundColor="red";
 });
 
 
