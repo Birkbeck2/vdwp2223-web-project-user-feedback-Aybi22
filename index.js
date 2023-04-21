@@ -39,6 +39,10 @@ function changeImg(){
 // Run function when page loads
 window.onload=changeImg;
 
+const small=document.querySelector(".small");
+small.addEventListener("click",()=> {
+  this.style.backgroundColor="red";
+});
 
 
 
