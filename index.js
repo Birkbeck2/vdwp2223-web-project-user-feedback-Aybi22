@@ -36,7 +36,8 @@ function changeImg(){
 	// Run function every x seconds
 	setTimeout("changeImg()", time);
 }
-
+// Run function when page loads
+window.onload=changeImg;
 
 
 
