@@ -39,7 +39,9 @@ function changeImg(){
 // Run function when page loads
 window.onload=changeImg;
 
-
+function stopImage(){
+  clearTimeout(time);
+}
 
 
 
