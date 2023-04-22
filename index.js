@@ -22,7 +22,7 @@ var time = 3000;	// Time Between Switch
 	 
 // Change Image
 function changeImg(){
-	document.getElementById("slide").src = images[i];
+	document.getElementById("slide").src = images[i];//Get images from slide
   
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
