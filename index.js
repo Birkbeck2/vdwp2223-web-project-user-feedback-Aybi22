@@ -17,8 +17,6 @@ var i = 0; 			// Start Point
 	
 var time = 3000;	// Time Between Switch
 	 
-
-
 // Change Image
 function changeImg(){
 	document.slide.src = images[i];
@@ -39,10 +37,25 @@ function changeImg(){
 // Run function when page loads
 window.onload=changeImg;
 
-const small=document.querySelector(".small");
-small.addEventListener("click", function (changeColor) {
-  document.querySelector(".small").style.backgroundColor="red";
+
+
+const small=document.querySelector(".small");//Create a variable
+small.addEventListener("click", function (changeColor) { //set a function
+  document.querySelector(".small").style.backgroundColor="red";//Change the background color of the selected element
 });
+
+const images=querySelectorAll(".images");
+images.forEach((images)=> {
+  images.addEventListener("click", function(stop){
+    setTimeout("stop",0);
+  }
+}
+
+
+
+
+
+
 
 
 
