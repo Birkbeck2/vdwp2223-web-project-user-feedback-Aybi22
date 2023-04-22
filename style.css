@@ -80,7 +80,7 @@ button{
 
 .top-title{
         font-size:44px;
-        
+        text-shadow:2px 3px 3px black;
         text-transform:uppercase; 
         font-weight:900;
         text-align:center;   
