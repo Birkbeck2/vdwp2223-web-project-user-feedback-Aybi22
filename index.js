@@ -42,6 +42,7 @@ window.onload=changeImg;
 
 
 
+
 const small=document.querySelector(".small");//Create a variable
 small.addEventListener("click", function (changeColor) { //set a function
   document.querySelector(".small").style.backgroundColor="red";//Change the background color of the selected element
