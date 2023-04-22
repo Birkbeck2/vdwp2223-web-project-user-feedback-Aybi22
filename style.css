@@ -13,7 +13,7 @@ html, body{
     width|:100%;
 }
 .images{
-       height:auto;
+       min-height:1350px;
 }
 .container{
            max-width:800px;
