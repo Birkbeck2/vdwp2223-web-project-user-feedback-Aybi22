@@ -182,7 +182,8 @@ img{
 footer{
          background:pink;
          text-align:center;
-         font-size:20px;
+         font-size:17px;
          font-weight:900;
          padding:16px;
+         text-transform: capitalize;
 }
