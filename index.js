@@ -37,8 +37,7 @@ function changeImg(){
 	setTimeout("changeImg()", time);
 }
 
-// Run function when page loads
-window.onload=changeImg;
+
 
 
 
