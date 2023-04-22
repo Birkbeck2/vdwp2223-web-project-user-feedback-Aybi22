@@ -108,7 +108,8 @@ a:hover{
 
 .bold{
        font-weight:900;
-       font-size:32px;
+       font-size:3
+       2px;
        font-family: 'Satisfy', cursive;
        
        
@@ -156,13 +157,18 @@ header{
         align-items: center;
 }
 
+.chef img{
+           
+}
+
+
 .btn{
      border:none;
      background:seagreen;
      color:#FFFFFF;
      padding:18px;
      font-size:23px;
-     margin:43px auto;
+     margin: 0 auto;
      width:300px;
 }
 .btn:hover{
