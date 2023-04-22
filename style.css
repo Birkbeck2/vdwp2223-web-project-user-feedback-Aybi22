@@ -12,9 +12,7 @@ html, body{
 .slide{
     width|:100%;
 }
-.images{
-       min-height:1350px;
-}
+
 .container{
            max-width:800px;
            border:1px solid gainsboro;
