@@ -139,7 +139,11 @@ header{
        
        
 }
-
+.burger{
+    color:#FFFFFF;
+    background-color: black;
+    padding:12px;
+}
 .chef{
         display:flex;
         flex-direction: column;
