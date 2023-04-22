@@ -123,6 +123,7 @@ header{
         top:0;
         position:sticky;
         background-color: pink;
+        box-shadow: 2px 3px 4px black;
 }
 .logo{
        margin-left:50px;
