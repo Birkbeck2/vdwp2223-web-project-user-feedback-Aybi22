@@ -98,8 +98,8 @@ a:hover{
 }
 .pic{
      display:none;
-     margin:auto;
      
+     width:100%;
      padding:14px;
 }
 .bold{
