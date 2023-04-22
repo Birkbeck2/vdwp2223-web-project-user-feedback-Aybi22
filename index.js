@@ -44,12 +44,8 @@ small.addEventListener("click", function (changeColor) { //set a function
   document.querySelector(".small").style.backgroundColor="red";//Change the background color of the selected element
 });
 
-const images=querySelectorAll(".images");
-images.forEach((images)=> {
-  images.addEventListener("click", function(stop){
-    setTimeout("stop",0);
-  }
-}
+
+ 
 
 
 
