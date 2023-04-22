@@ -13,8 +13,6 @@ var images=[
 "images/img11.jpg",
 ];
 
-var text=["meat","salad","cake", "wrap"];
-
 
 
 
@@ -25,7 +23,7 @@ var time = 3000;	// Time Between Switch
 // Change Image
 function changeImg(){
 	document.slide.src = images[i];
-  document.getElementsByClassName("text").innerHTML=text[images[i]];
+  
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
 	  // Add 1 to Index
