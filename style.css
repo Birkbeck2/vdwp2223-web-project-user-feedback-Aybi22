@@ -139,6 +139,12 @@ header{
        
 }
 
+.chef{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+}
+
 .btn{
      border:none;
      background:seagreen;
