@@ -98,10 +98,13 @@ a:hover{
 }
 .pic{
      display:none;
-     
-     width:100%;
      padding:14px;
 }
+.pic img{
+    width:100%;
+}
+
+
 .bold{
        font-weight:900;
        font-size:22px;
