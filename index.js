@@ -22,7 +22,7 @@ var images=[
 var i = 0; 			// Start Point
 	
 	 function plusSides(n){
-    changeImg(i+=1);
+    changeImg(i++=1);
    }
 // Change Image
 function changeImg(n){
