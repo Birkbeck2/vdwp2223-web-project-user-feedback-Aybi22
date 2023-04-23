@@ -25,7 +25,7 @@ var i = 0; 			// Start Point
     changeImg(i+=n);
    }
 // Change Image
-function changeImg(){
+function changeImg(n){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
 	 
