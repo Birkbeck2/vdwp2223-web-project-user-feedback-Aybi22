@@ -17,32 +17,27 @@ let images=[
 
   
 
-let index = 0; 			// Start Point
+let i = 0; 			// Start Point
 
 
 
-function changeImage(n){
 
-    changeImg(index +=n);
-   }
-function currentImage(n){
-  changeImg(index=n);
-}
+
 
    // Change Image
-function changeImg(n){
+function changeImg(){
 	
   
   document.getElementById("slide").src = images[i];//Get images from slide
   
-	 
-// Check If Index Is Under Max
-if(index < images.length  -1) 
-  // Add 1 to Index
- i++;
-
-if(index> images.length) 
-  i=0;
+	// Change If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
 }
 
 
