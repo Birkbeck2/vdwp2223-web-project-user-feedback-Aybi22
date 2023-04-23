@@ -41,7 +41,7 @@ window.onload=changeImg;
 
 function stopImage(){
   clearTimeout(time);
-  time_on=0;
+  
 }
 
 
