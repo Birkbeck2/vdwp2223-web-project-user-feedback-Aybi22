@@ -1,7 +1,7 @@
 
 //variable to store the images
 
-var images=[
+let images=[
 	"images/img1.jpg",
 	"images/img2.jpg",
 	"images/img3.jpg",
@@ -19,8 +19,8 @@ var images=[
     setInterval("changeImage(1)", 5000);
   }
 
-var i = 0; 			// Start Point
-
+let i = 0; 			// Start Point
+changeImg(i);
 	 function changeImage(n){
 
     changeImg(i +=n);
