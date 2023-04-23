@@ -14,11 +14,12 @@ var images=[
 	"images/img11.jpg",
 	];
 
-
+  function autoRun() {
+    setInterval("changeImage(1)", 5000);
+  }
 
 var i = 0; 			// Start Point
 	
-var time = 3000;	// Time Between Switch
 	 
 // Change Image
 function changeImg(){
@@ -34,8 +35,7 @@ if(i < images.length - 1){
   i = 0;
 }
 
-// Run function every x seconds
-setTimeout("changeImg()", time);
+
 }
 
 // Run function when page loads
