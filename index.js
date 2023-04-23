@@ -22,9 +22,14 @@ var images=[
 var i = 0; 			// Start Point
 	
 	 function plusSides(n){
-    changeImg(i++=1);
+    changeImg(i+=n);
    }
-// Change Image
+
+function currentSlide(n){
+  showImage(i=n);
+}
+
+   // Change Image
 function changeImg(n){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
