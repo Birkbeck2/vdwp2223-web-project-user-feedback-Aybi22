@@ -25,8 +25,10 @@ var i = 0; 			// Start Point
 
 
    // Change Image
-function changeImg(){
-	document.getElementById("slide").src = images[i];//Get images from slide
+function changeImg(x){
+	i+=x;
+  
+  document.getElementById("slide").src = images[i];//Get images from slide
   
 	 
 // Check If Index Is Under Max
