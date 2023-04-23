@@ -25,7 +25,9 @@ var i = 0; 			// Start Point
 
     changeImg(i +=n);
    }
-
+function currentImage(n){
+  changeImg(i=n);
+}
 
    // Change Image
 function changeImg(n){
