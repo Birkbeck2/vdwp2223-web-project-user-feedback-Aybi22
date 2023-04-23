@@ -190,3 +190,8 @@ footer{
          text-transform: capitalize;
          margin-top:12px;
 }
+
+#slide{
+
+    display:none;
+}
