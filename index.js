@@ -12,7 +12,7 @@ let images=[
 	"images/img8.jpg",
 	"images/img9.jpg",
 	"images/img10.jpg",
-	"images/img11.jpg",
+	"images/img11.jpg"
 	];
 
   function autoRun() {
@@ -21,7 +21,6 @@ let images=[
 
 let i = 0; 			// Start Point
 changeImg(i);
-let imageLength=images.length -1;	 
 
 
 function changeImage(n){
@@ -40,11 +39,11 @@ function changeImg(n){
   
 	 
 // Check If Index Is Under Max
-if(i < imageLength ){
+if(i < images.Length-1 ){
   // Add 1 to Index
   i++; 
 }
-if (i > imagelength ){
+if (i > images.length ){
   i=0;
 }
 
