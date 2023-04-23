@@ -15,7 +15,9 @@ var images=[
 	"images/img11.jpg",
 	];
 
- 
+  function autoRun() {
+    setInterval("changeImage(1)", 5000);
+  }
 
 var i = 0; 			// Start Point
 
