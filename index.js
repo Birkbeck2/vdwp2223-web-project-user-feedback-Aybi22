@@ -28,7 +28,10 @@ small.addEventListener("click", function (changeColor) { //set a function
 
 
  
-
+let btnback=document.querySelector(".btnlack");
+btnback.addEventListener("click",() => {
+  window.history.back();
+});
 
 
 
