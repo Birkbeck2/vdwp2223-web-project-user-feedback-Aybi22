@@ -21,13 +21,16 @@ var images=[
 
 var i = 0; 			// Start Point
 
-	 
+	 function changeImage(n){
+
+    showImg(i +=n);
+   }
 
 
    // Change Image
 function changeImg(n){
 	
-  
+ 
   document.getElementById("slide").src = images[i];//Get images from slide
   
 	 
