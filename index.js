@@ -19,7 +19,7 @@ var images=[
     setInterval("changeImage(1)", 5000);
   }
 
-var i = 0; 			// Start Point
+var i = 1; 			// Start Point
 	
 	 
 // Change Image
