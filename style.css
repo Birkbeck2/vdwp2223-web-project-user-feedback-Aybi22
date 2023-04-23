@@ -6,6 +6,7 @@
 /*Define the font family of the page*/
 html, body{
             font-family:verdana;
+            
            
 }
 
@@ -69,7 +70,7 @@ button{
              display:flex;
              justify-content:center;
              margin-top:17px;
-            height:900px;
+            height:auto;
              width: 100%;
 
 }
