@@ -1,7 +1,18 @@
 
 //variable to store the images
 
-
+var images=[
+	"images/img1.jpg",
+	"images/img2.jpg",
+	"images/img3.jpg",
+	"images/img4.jpg",
+	"images/img5.jpg",
+	"images/img6.jpg",
+	"images/img8.jpg",
+	"images/img9.jpg",
+	"images/img10.jpg",
+	"images/img11.jpg",
+	];
 
 
 
@@ -13,8 +24,22 @@ var time = 3000;	// Time Between Switch
 function changeImg(){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
-	for(let i=-0;  i<images.length; i++);  
-    
+	 
+// Check If Index Is Under Max
+if(i < images.length - 1){
+  // Add 1 to Index
+  i++; 
+} else { 
+  // Reset Back To O
+  i = 0;
+}
+
+// Run function every x seconds
+setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;    
    
 
 	
