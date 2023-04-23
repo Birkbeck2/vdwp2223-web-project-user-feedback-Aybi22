@@ -32,6 +32,17 @@ html, body{
            margin:60px auto;
            
 }
+.slide-section{
+    position:relative;
+    max-width:900px;
+}
+.move{
+    position:relative;
+    top:50px;
+    left:50px;
+}
+
+
 button{
           border:none;/*Remove button border*/
           padding:12px;
