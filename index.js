@@ -39,15 +39,15 @@ function changeImg(n){
   
 	 
 // Check If Index Is Under Max
-if(i > images.length -1 ){
+if(n > images.length  ) {i=1}
   // Add 1 to Index
-  i=0; 
-}
-if (i <0 ){
+ 
+
+if (n <1 ) {i=images.length}
   i=images.length;
 }
 
-} 
+ 
 
 
 
