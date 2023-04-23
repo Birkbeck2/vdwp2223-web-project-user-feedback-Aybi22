@@ -32,14 +32,16 @@ html, body{
            margin:60px auto;
            
 }
-.slide-section{
+.section{
     position:relative;
     max-width:900px;
+    border:13px solid red;
 }
-.move{
+.left{
     position:absolute;
     top:50px;
     left:50px;
+    color:red;
 }
 
 
