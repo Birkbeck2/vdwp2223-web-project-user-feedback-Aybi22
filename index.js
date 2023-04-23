@@ -40,13 +40,12 @@ function changeImg(n){
 if(index < images.length  -1){
   // Add 1 to Index
   i++; 
-} else { 
-  // Reset Back To O
+} 
+
+if (i > imageLength) {
   i = 0;
-}
+} 
 
-
-}
 
 // Run function when page loads
 window.onload=changeImg;    
