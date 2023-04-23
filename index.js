@@ -40,10 +40,9 @@ function changeImg(n){
 if(index < images.length  -1){
   // Add 1 to Index
   i++; 
-} 
+} else{
 
-if (i > imageLength) {
-  i = 0;
+i = 0;
 } 
 
 
