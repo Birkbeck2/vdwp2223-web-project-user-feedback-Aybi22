@@ -28,12 +28,7 @@ function changeImg(){
 	  images[i].style.display="block";
   }   
     
-    // Add 1 to Index
-	  i++; 
-	} else { 
-		// Reset Back To O
-		i = 0;
-	}
+   
 
 	// Run function every x seconds
 	setTimeout("changeImg()", time);
