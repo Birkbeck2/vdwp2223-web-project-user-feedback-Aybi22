@@ -21,10 +21,7 @@ var images=[
 
 var i = 0; 			// Start Point
 	
-	 function changeImg(n){
-    changeImg(i+=n);
-   }
-
+	 
 
 
    // Change Image
