@@ -44,7 +44,10 @@ window.onload=changeImg;
 
 	
 
-
+let btnback=document.querySelector(".btnback");
+btnback.addEventListener("click", ()=>{
+  window.history.back();
+});
 
 const small=document.querySelector(".small");//Create a variable
 small.addEventListener("click", function (changeColor) { //set a function
