@@ -22,7 +22,7 @@ var images=[
 var i = 0; 			// Start Point
 	
 	 function plusSides(n){
-    changeImg(i+=n);
+    changeImg(i++);
    }
 // Change Image
 function changeImg(n){
@@ -30,7 +30,7 @@ function changeImg(n){
   
 	 
 // Check If Index Is Under Max
-if(i < images.length  -1){
+if(index < images.length  -1){
   // Add 1 to Index
   i++; 
 } else { 
