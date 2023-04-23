@@ -141,6 +141,8 @@ a:hover{
        font-weight:900;
        font-size:32px;
        font-family: 'Satisfy', cursive;
+       color:red;
+       font-style:oblique;
        
 }
 .name{
