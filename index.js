@@ -20,7 +20,8 @@ var images=[
   }
 
 var i = 0; 			// Start Point
-	
+var imagesLength = images.length - 1;
+
 	 
 
 
