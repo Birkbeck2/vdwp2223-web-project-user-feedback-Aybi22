@@ -25,9 +25,7 @@ var i = 0; 			// Start Point
     changeImg(i+=n);
    }
 
-function currentSlide(n){
-  showImage(i=n);
-}
+
 
    // Change Image
 function changeImg(n){
