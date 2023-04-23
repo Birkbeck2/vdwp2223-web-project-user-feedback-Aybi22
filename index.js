@@ -25,8 +25,8 @@ var i = 0; 			// Start Point
 
 
    // Change Image
-function changeImg(x){
-	i+=x;
+function changeImg(n){
+	
   
   document.getElementById("slide").src = images[i];//Get images from slide
   
