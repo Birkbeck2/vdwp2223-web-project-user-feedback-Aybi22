@@ -13,9 +13,7 @@ var time = 3000;	// Time Between Switch
 function changeImg(){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
-	for(let i=-0;  i<images.length; i++){
-	 document.getElementById("slide") .images[i].style.display="block";
-  }   
+	for(let i=-0;  i<images.length; i++);  
     
    
 
