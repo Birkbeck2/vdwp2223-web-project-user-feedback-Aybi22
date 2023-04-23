@@ -156,6 +156,7 @@ header{
         position:sticky;
         background-color: pink;
         box-shadow: 2px 3px 4px black;
+        z-index: 1;
 }
 .logo{
        margin-left:50px;
