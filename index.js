@@ -24,8 +24,7 @@ var time = 3000;	// Time Between Switch
 function changeImg(){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
-	// Check If Index Is Under Max
-	if(i < images.length - 1){
+	for(let i=-0;  i<images.length; i++)
 	  images[i].style.display="block";
     
     
