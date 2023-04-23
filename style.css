@@ -35,7 +35,7 @@ html, body{
 .section{
     position:relative;
     max-width:900px;
-    border:13px solid red;
+   
 }
 .left{
     position:absolute;
