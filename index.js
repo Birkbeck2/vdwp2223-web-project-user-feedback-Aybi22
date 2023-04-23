@@ -20,7 +20,7 @@ let images=[
   }
 
 let i = 0; 			// Start Point
-changeImg(i);
+
 
 
 function changeImage(n){
@@ -39,11 +39,11 @@ function changeImg(n){
   
 	 
 // Check If Index Is Under Max
-if(n > images.length  ) {index=1}
+if(i > images.length  ) {i=1}
   // Add 1 to Index
  
 
-if (n <1 ) {index=images.length}
+if (i <images.length ) {i=images.length}
   i=images.length;
 }
 
