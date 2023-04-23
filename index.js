@@ -19,16 +19,18 @@ var images=[
     setInterval("changeImage(1)", 5000);
   }
 
-var i = 1; 			// Start Point
+var i = 0; 			// Start Point
 	
-	 
+	 function plusSides(n){
+    changeImg(i+=n);
+   }
 // Change Image
 function changeImg(){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
 	 
 // Check If Index Is Under Max
-if(i < images.length - 1){
+if(i < images.length  -1){
   // Add 1 to Index
   i++; 
 } else { 
