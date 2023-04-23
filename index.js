@@ -41,7 +41,7 @@ if(index < images.length  -1){
   // Add 1 to Index
   i++; 
 }
-if (index> images.length){
+if (index> images.length -1){
   i=0;
 }
 
