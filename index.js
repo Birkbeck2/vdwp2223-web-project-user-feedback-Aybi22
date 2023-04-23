@@ -23,7 +23,7 @@ var i = 0; 			// Start Point
 
 	 function changeImage(n){
 
-    showImg(i +=n);
+    changeImg(i +=n);
    }
 
 
