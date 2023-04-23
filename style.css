@@ -39,7 +39,7 @@ html, body{
 }
 .left{
     position:absolute;
-    top:590px;
+    top:700px;
     left:0px;
     width:100px;
     color:white;
@@ -51,7 +51,7 @@ html, body{
 .right{
     position:absolute;
     right:0px;
-    top:590px;
+    top:700px;
     width:100px;
     text-align:center;
     color:white;
@@ -222,7 +222,3 @@ footer{
 }
 
 
-.btnback{
-        background:orange;
-        color:white;
-}
