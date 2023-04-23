@@ -39,7 +39,7 @@ html, body{
 }
 .left{
     position:absolute;
-    top:80%;
+    top:80px;
     left:0px;
     color:white;
     background:seagreen;
@@ -48,7 +48,7 @@ html, body{
 }
 .right{
     position:absolute;
-    right:0px
+    right:0px;
     top:80px;
     
     color:white;
