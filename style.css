@@ -136,7 +136,11 @@ a:hover{
     outline:10px solid white;
 }
 
-
+.pic-txt{
+    margin-top:30px;
+    font-size:20px;
+    font-weight:900;
+}
 .bold{
        font-weight:900;
        font-size:32px;
