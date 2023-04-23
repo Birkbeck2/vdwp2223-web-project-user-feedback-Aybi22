@@ -43,6 +43,8 @@ if(i < images.length  -1) {
   // Add 1 to Index
  i++;
 }
+if(i> images.length)
+  i--;
 }
 
  
