@@ -15,35 +15,33 @@ let images=[
 	"images/img11.jpg"
 	];
 
-  function autoRun() {
-    setInterval("changeImage(1)", 5000);
-  }
+  
 
-let i = 0; 			// Start Point
+let index = 0; 			// Start Point
 
 
 
 function changeImage(n){
 
-    changeImg(i +=n);
+    changeImg(index +=n);
    }
 function currentImage(n){
-  changeImg(i=n);
+  changeImg(index=n);
 }
 
    // Change Image
 function changeImg(n){
 	
- 
+  
   document.getElementById("slide").src = images[i];//Get images from slide
   
 	 
 // Check If Index Is Under Max
-if(i < images.length  -1) {
+if(index < images.length  -1) 
   // Add 1 to Index
  i++;
-}
-if(i> images.length) 
+
+if(index> images.length) 
   i=0;
 }
 
