@@ -124,7 +124,7 @@ a{
 a:hover{
          background:green;
          padding:10px;
-         transition:1s;
+         transition:0.5s;
          
 }
 .pic{
