@@ -14,7 +14,7 @@ function changeImg(){
 	document.getElementById("slide").src = images[i];//Get images from slide
   
 	for(let i=-0;  i<images.length; i++){
-	  images[i].style.display="block";
+	 document.getElementById("slide") .images[i].style.display="block";
   }   
     
    
