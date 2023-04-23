@@ -40,11 +40,11 @@ function changeImg(n){
   
 	 
 // Check If Index Is Under Max
-if(index < imageLength ){
+if(i < imageLength ){
   // Add 1 to Index
   i++; 
 }
-if (index > imagelength ){
+if (i > imagelength ){
   i=0;
 }
 
