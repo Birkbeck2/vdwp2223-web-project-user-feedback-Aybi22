@@ -125,7 +125,7 @@ let btn1=document.querySelector(".btn1");
 });
 
 
-var pictures=['images/img14.jpg', 'images/img15.png' ,'images/img16.jpg','images/img17.jpg','images/img18.jpg','images/img19.jpg'];
+var pictures=['images/img14.jpg', 'images/img15.webp' ,'images/img16.jpg','images/img17.jpg','images/img18.jpg','images/img19.jpg'];
 var i=0;
 var time=3000;
 
