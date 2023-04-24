@@ -27,7 +27,7 @@
 function prev() {
 if (i>=0) i=images.length;//Define condition to display the previous image
 i--;
-return setImg();//Declare a function to display images
+return showImg();//Declare a function to display images
 
 }
 
@@ -35,11 +35,11 @@ return setImg();//Declare a function to display images
 function next() {
 if(i>=images.length -1) i=-1;//Define condition to display the next image
 i++;//Add 1 when image number is bigger than the number of images in the variable
-return setImg();
+return showImg();
 
 }
 		//Display images
-function setImg(){
+function showImg(){
 
   return sliderimg.setAttribute('src','images/'+ images[i]);//Add a class attribute to images
 }
