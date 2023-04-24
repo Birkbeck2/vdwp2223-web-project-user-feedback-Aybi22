@@ -43,8 +43,7 @@ function changeImg(){
   // Reset Back To O
   i = 0;
 
-// Run function every x seconds
-setTimeout("changeImg()", 3000);
+
 
 }
 
