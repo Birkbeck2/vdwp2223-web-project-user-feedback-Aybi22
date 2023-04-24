@@ -17,8 +17,7 @@ html, body{
            text-align: center;
            box-shadow:2px 4px 5px;
            background:pink;
-           
-}
+           }
 
 .ratings-container{
            display:flex; /*Create a flex container*/
@@ -55,7 +54,8 @@ button{
     padding:11px;
     font-weight:900;
     text-align:center;
-    font-size:20px
+    font-size:20px;
+    cursor:pointer;
 }
 
 /*Style next button */
@@ -71,8 +71,15 @@ button{
     padding:11px;
     font-weight:900;
     font-size:20px;
+    cursor:pointer;
 }
+.right:hover,
+.left:hover{
+    background:gainsboro;
+    padding:10px;
+    transition:0.5s;
 
+}
 
 .rating{
       display:flex;
@@ -126,8 +133,7 @@ a:hover{
          background:green;
          padding:10px;
          transition:0.5s;
-         
-}
+         }
 .pic{
      display:none;
      padding:14px;
@@ -195,9 +201,7 @@ header{
         align-items: center;
 }
 
-.chef img{
-           
-}
+
 
 
 .btn{
