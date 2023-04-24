@@ -3,7 +3,7 @@
 
 
 
-  var sliderimg=document.querySelector('.slider-img');
+  var sliderimg=document.querySelector('.slider-image');
   var images=[
     'img1.jpg',
     'img2.jpg',
