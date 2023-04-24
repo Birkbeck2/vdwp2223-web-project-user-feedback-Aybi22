@@ -17,39 +17,24 @@ var images=[
 
   
 
-var i = 0; 			// Start Point
+var i=0;
 var time=3000;
 
-
-
-
-
-
-   // Change Image
-function changeImg() {
-	
-  document.getElementById("slide").src = images[i];//Get images from slide
- 
+function autoRun() {
+  setInterval("changeImg(1)", 5000);
 }
 
- // Check If Index Is Under Max
- if(i < images.length -1){
-  // Add 1 to Index
-  i++; 
+function changeImg(){
+  document.getElementById('slide').src=images[i];
+}
+
+if(i<images.length){
+  i++;
+
 } else{
   i=0;
-// Run function every x seconds
-setTimeout("changeImg()", time);
-
 }
-// Run function when page loads
-window.onload=changeImg;
-
-  
-
-
-
-
+setTimeout("changeImg()", time);
    
 
 	
