@@ -18,10 +18,10 @@ let images=[
   
 
 let i = 0; 			// Start Point
-var timer:2000;
-function autoRun(){
-  setTimeout("changeImg",5000);
-}
+var time:3000;
+
+
+
 
 
    // Change Image
