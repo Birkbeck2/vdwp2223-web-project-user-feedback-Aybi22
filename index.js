@@ -47,33 +47,13 @@ function showImage(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-  const small=document.querySelector(".small");//Create a variable
+const small=document.querySelector(".small");//Create a variable
 small.addEventListener("click", function (changeColor) { //set a function
   document.querySelector(".small").style.backgroundColor="red";//Change the background color of the selected element
 });
 
 
  
-
-
-
-
-
-
-
-
 const ratingElements=document.querySelectorAll(".rating");//Create a variable to bring all the rating elements
 
 ratingElements.forEach((ratingElement) => { //Access each of the rating elements
