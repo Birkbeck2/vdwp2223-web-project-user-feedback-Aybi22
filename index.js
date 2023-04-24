@@ -120,9 +120,24 @@ Feedback:${selectedRating} <br><br>
 let btn1=document.querySelector(".btn1"); 
   btn1.addEventListener("click",function(showImage){ //create a function that displays the image when the button is clicked
     document.querySelector(".pic").style.display="block";
-   setTimeout(showImage,2000);
+   
 
 });
 
 
+var pictures=['images/img12.jpg', 'images/img13.jpg','images/img14.jpg'];
+var i=0;
+var time=3000;
 
+function displayImg(){
+  document.picture.src=pictures[i];
+  if(i<pictures.length -1){
+    i++;
+  }else{
+    i=0;
+  }
+  setTimeout("displayImg()", time);
+
+}
+
+window.onload=displayImg;
