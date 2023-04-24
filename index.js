@@ -27,10 +27,8 @@ var imageLength=images.length -1;
 function changeImg(n) {
 	imageIndex+=n;
   
-  document.getElementById("slide").src = images[imageIndex];//Get images from slide
-  
-	
-
+ 
+}
 
  // Check If Index Is Under Max
  if(imageIndex > imageLength){
@@ -43,7 +41,8 @@ imageIndex=imageLength;
 setTimeout("changeImg()", time);
 
 }
-}
+document.getElementById("slide").src = images[imageIndex];//Get images from slide
+  
 
 
 
