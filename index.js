@@ -22,9 +22,6 @@ var time=3000;
 
 
 
-function autoRun() {
-  setInterval("changeImg()", 5000);
-}
 
 
 
@@ -36,7 +33,7 @@ function changeImg() {
 }
 
  // Check If Index Is Under Max
- if(i < images.length){
+ if(i < images.length -1){
   // Add 1 to Index
   i++; 
 } else{
@@ -45,7 +42,8 @@ function changeImg() {
 setTimeout("changeImg()", time);
 
 }
-/
+// Run function when page loads
+window.onload=changeImg;
 
   
 
