@@ -1,9 +1,11 @@
 
-//variable to store the images
 
 
 
+//Return all the images
   var sliderimg=document.querySelector('.slider-image');
+  
+  //variable to store the images
   var images=[
     'img1.jpg',
     'img2.jpg',
@@ -18,26 +20,28 @@
     'img11.jpg'
     ];
   
-  
+  //Define starting point
   var i=0;
 
-
+//Create function for the previous button
 function prev() {
 if (i<=0) i=images.length;
-i--;
-return showImage();
+i--;//
+return showImage();//Declare a function to display images
 
 }
+
+//create function for the next button
 function next() {
 if(i>=images.length -1) i=-1;
-i++;
+i++;//Add 1 when image number is bigger than the number of images in the variable
 return showImage();
 
 }
-		
+		//display images
 function showImage(){
 
-  return sliderimg.setAttribute('src','images/'+ images[i]);
+  return sliderimg.setAttribute('src','images/'+ images[i]);//Add a class attribute to images
 }
 
 
@@ -124,9 +128,9 @@ let btn1=document.querySelector(".btn1");
 
 });
 
-
+//Create variable
 var pictures=['images/img14.jpg', 'images/img15.webp' ,'images/img16.jpg','images/img17.jpg','images/img18.jpg','images/img19.jpg'];
-var i=0;
+var i=0;//Set starting point
 var time=3000;
 
 function displayImg(){
