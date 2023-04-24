@@ -15,12 +15,25 @@ var images=[
 	"images/img11.jpg"
 	];
 
-  
+  var slider=document.querySelector("slide");
+  var i=0;
 
 
+function prev() {
+if (i<=0) i=images.length;
+i--;
+return showImage();
 
-	
+}
+function prev() {
 
+
+}
+		
+function showImage(){
+
+  return slide.setAttribute('src','images/'+ images[i]);
+}
 
 
 
