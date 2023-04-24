@@ -18,11 +18,8 @@ var images=[
   
 
 var i = 0; 			// Start Point
+var time=3000;
 
-
-function autoRun() {
-  setInterval("changeImg(1)", 5000);
-}
 
 
 
@@ -42,6 +39,9 @@ function changeImg() {
 } else { 
   // Reset Back To O
   i = 0;
+// Run function every x seconds
+setTimeout("changeImg()", time);
+
 }
 
 
