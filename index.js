@@ -24,24 +24,22 @@ var imageLength=images.length -1;
 
 
    // Change Image
-function changeImg(n) {
-	imageIndex+=n;
-  
+function changeImg() {
+	
+  document.getElementById("slide").src = images[imageIndex];//Get images from slide
  
 }
 
  // Check If Index Is Under Max
  if(imageIndex > imageLength){
   // Add 1 to Index
-  imageIndex=0; 
-} 
-if(imageIndex<0){
-imageIndex=imageLength;
+  imageIndex++; 
+} else{
+  imageIndex=0;
+
 // Run function every x seconds
 setTimeout("changeImg()", time);
-
 }
-document.getElementById("slide").src = images[imageIndex];//Get images from slide
   
 
 
