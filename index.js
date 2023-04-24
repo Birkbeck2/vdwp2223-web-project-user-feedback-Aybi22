@@ -22,6 +22,11 @@ var time=3000;
 var imageLength=images.length -1;
 
 
+function autoRun() {
+  setInterval("changeImg(1)", 5000);
+}
+
+
 
    // Change Image
 function changeImg() {
