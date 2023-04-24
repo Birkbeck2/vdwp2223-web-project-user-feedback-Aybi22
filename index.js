@@ -17,8 +17,8 @@
     'img10.jpg',
     'img11.jpg'
     ];
-  
-  
+  var title=['chicken', 'fries','cake'];
+  document.getElementById('caption').innerHTML=caption[i];
   
   var i=0;
 
