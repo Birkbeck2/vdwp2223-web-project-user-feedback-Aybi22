@@ -201,7 +201,9 @@ header{
         align-items: center;
 }
 
-
+.me{
+    border-radius:100%;
+}
 
 
 .btn{
