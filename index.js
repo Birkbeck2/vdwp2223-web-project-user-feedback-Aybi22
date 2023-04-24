@@ -17,31 +17,32 @@ var images=[
 
   
 
-var i = 0; 			// Start Point
+var imageIndex = 0; 			// Start Point
 var time=3000;
-
+var imageLength=images.length -1;
 
 
 
    // Change Image
-function changeImg() {
-	
+function changeImg(n) {
+	imageIndex+=n;
   
-  document.getElementById("slide").src = images[i];//Get images from slide
+  document.getElementById("slide").src = images[imageIndex];//Get images from slide
   
 	
-}
+
 
  // Check If Index Is Under Max
- if(i < images.length - 1){
+ if(imageIndex > imageLength){
   // Add 1 to Index
-  i++; 
-} else { 
-  // Reset Back To O
-  i = 0;
+  imageIndex=0; 
+} 
+if(imageIndex<0){
+imageIndex=imageLength;
 // Run function every x seconds
 setTimeout("changeImg()", time);
 
+}
 }
 
 
