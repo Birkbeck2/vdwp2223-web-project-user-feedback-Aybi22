@@ -2,7 +2,7 @@
 
 
 
-//Return all the images
+//Return the first child element
   var sliderimg=document.querySelector('.slider-image');
   
   //variable to store the images
