@@ -25,7 +25,7 @@
 
 //Create function for the previous button
 function prev() {
-if (i<=0) i=images.length;
+if (i<=0) i=images.length;//Define condition to display the previous image
 i--;
 return showImage();//Declare a function to display images
 
@@ -33,7 +33,7 @@ return showImage();//Declare a function to display images
 
 //create function for the next button
 function next() {
-if(i>=images.length -1) i=-1;
+if(i>=images.length -1) i=-1;//define condition to display the next image
 i++;//Add 1 when image number is bigger than the number of images in the variable
 return showImage();
 
@@ -54,11 +54,11 @@ small.addEventListener("click", function (changeColor) { //set a function
 
 
  
-const ratingElements=document.querySelectorAll(".rating");//Create a variable to bring all the rating elements
+const ratingElements=document.querySelectorAll(".rating");//Create a variable to Access all the rating elements
 
 ratingElements.forEach((ratingElement) => { //Access each of the rating elements
 ratingElement.addEventListener("click", (event) =>{ //Create an event when we click on a rating element
-    removeActive();//Function to remove active elements
+    removeActive();//Function to remove all active elements
     selectedRating=
     event.target.innerText|| event.target.parentNode.innerText;//Create the value of the inner text when rating is selected
     //Add active class to the html file
@@ -87,10 +87,7 @@ btnElement.addEventListener("click",()=>{ //Create a function to display text wh
     if(selectedRating !=="") { //Create condition to trigger the function
 
 //Change the HTML element
-headingElement.innerHTML=`Thank you! 
-<br>
-<br>
-    
+headingElement.innerHTML=`Thank you
 Feedback:${selectedRating} <br><br> 
 
 <p>you feedback is very important for us!</p>
