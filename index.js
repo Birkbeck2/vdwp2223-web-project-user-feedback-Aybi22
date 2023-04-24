@@ -132,7 +132,7 @@ let btn1=document.querySelector(".btn1");
 var pictures=['images/img14.jpg', 'images/img15.webp' ,'images/img16.jpg','images/img17.jpg','images/img18.jpg','images/img19.jpg'];
 var i=0;//Set starting point
 var time=3000;
-
+//Create function to display images
 function displayImg(){
   document.picture.src=pictures[i];
   if(i<pictures.length -1){
