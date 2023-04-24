@@ -86,7 +86,7 @@ button{
       cursor:pointer;
 
 }
-
+/*Set effect on hover*/
 .rating:hover,
 .rating.active
 {
@@ -103,6 +103,7 @@ button{
       background:black;
       cursor: pointer;
 }
+/*Define Flex container*/
 .page-container{
              display:flex;
              justify-content:center;
