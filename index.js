@@ -25,8 +25,8 @@ function autoRun() {
 }
 
 function changeImg(){
-  document.getElementById('slide').src=images[i];
-}
+  document.slide.src=images[i];
+
 
 if(i<images.length){
   i++;
