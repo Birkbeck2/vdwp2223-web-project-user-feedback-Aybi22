@@ -17,25 +17,7 @@ var images=[
 
   
 
-var i=0;
-var time=3000;
 
-function autoRun() {
-  setInterval("changeImg(1)", 5000);
-}
-
-function changeImg(){
-  document.slide.src=images[i];
-
-
-if(i<images.length){
-  i++;
-
-} else{
-  i=0;
-}
-setTimeout("changeImg()", time);
-}  
 
 	
 
