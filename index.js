@@ -25,20 +25,20 @@
 
 //Create function for the previous button
 function prev() {
-if (i<=0) i=images.length;//Define condition to display the previous image
+if (i=0) i=images.length;//Define condition to display the previous image
 i--;
 return showImage();//Declare a function to display images
 
 }
 
-//create function for the next button
+//Create function for the next button
 function next() {
-if(i>=images.length -1) i=-1;//define condition to display the next image
+if(i>=images.length -1) i=-1;//Define condition to display the next image
 i++;//Add 1 when image number is bigger than the number of images in the variable
 return showImage();
 
 }
-		//display images
+		//Display images
 function showImage(){
 
   return sliderimg.setAttribute('src','images/'+ images[i]);//Add a class attribute to images
@@ -48,7 +48,7 @@ function showImage(){
 
 
 const small=document.querySelector(".small");//Create a variable
-small.addEventListener("click", function (changeColor) { //set a function
+small.addEventListener("click", function (changeColor) { //Set a function
   document.querySelector(".small").style.backgroundColor="red";//Change the background color of the selected element
 });
 
