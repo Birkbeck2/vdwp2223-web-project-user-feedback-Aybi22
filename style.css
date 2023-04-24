@@ -50,7 +50,7 @@ button{
     position:absolute;
     top:50%;
     left:0px;
-    width:100px;
+    width:150px;
     color:black;
     background:beige;
     padding:11px;
@@ -62,7 +62,7 @@ button{
     position:absolute;
     right:0px;
     top:50%;
-    width:100px;
+    width:150px;
     text-align:center;
     color:black;
     background:beige;
