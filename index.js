@@ -35,7 +35,7 @@ if(i<images.length){
   i=0;
 }
 setTimeout("changeImg()", time);
-   
+}  
 
 	
 
