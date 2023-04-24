@@ -1,7 +1,7 @@
 
 //variable to store the images
 
-let images=[
+var images=[
 	"images/img1.jpg",
 	"images/img2.jpg",
 	"images/img3.jpg",
@@ -17,17 +17,17 @@ let images=[
 
   
 
-let i = 0; 			// Start Point
+var i = 0; 			// Start Point
 
 
 function autoRun() {
-  setInterval("changeImage(1)", 5000);
+  setInterval("changeImg(1)", 5000);
 }
 
 
 
    // Change Image
-function changeImg(){
+function changeImg() {
 	
   
   document.getElementById("slide").src = images[i];//Get images from slide
@@ -42,9 +42,6 @@ function changeImg(){
 } else { 
   // Reset Back To O
   i = 0;
-
-
-
 }
 
 
