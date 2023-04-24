@@ -20,7 +20,9 @@ let images=[
 let i = 0; 			// Start Point
 
 
-
+function autoRun() {
+  setInterval("changeImage(1)", 5000);
+}
 
 
 
