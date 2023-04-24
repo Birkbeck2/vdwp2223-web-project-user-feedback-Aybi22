@@ -136,12 +136,13 @@ var time=3000;
 function displayImg(){
   document.picture.src=pictures[i];
   if(i<pictures.length -1){
-    i++;
+    i++;// Add 1 to Index
   }else{
     i=0;
   }
+  //Define function running time
   setTimeout("displayImg()", time);
 
 }
-
+// Run function when page loads
 window.onload=displayImg;
