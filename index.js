@@ -93,7 +93,7 @@ headingElement.innerHTML=`Thank you!
     
 Feedback:${selectedRating} <br><br> 
 
-<p>you feedback is very important to us!</p>
+<p>you feedback is very important for us!</p>
 `
 
 }
