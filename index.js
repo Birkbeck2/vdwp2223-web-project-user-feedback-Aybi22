@@ -17,13 +17,13 @@ var images=[
 
   
 
-var imageIndex = 0; 			// Start Point
+var i = 0; 			// Start Point
 var time=3000;
-var imageLength=images.length -1;
+
 
 
 function autoRun() {
-  setInterval("changeImg(1)", 5000);
+  setInterval("changeImg()", 5000);
 }
 
 
@@ -31,20 +31,22 @@ function autoRun() {
    // Change Image
 function changeImg() {
 	
-  document.getElementById("slide").src = images[imageIndex];//Get images from slide
+  document.getElementById("slide").src = images[i];//Get images from slide
  
 }
 
  // Check If Index Is Under Max
- if(imageIndex > imageLength){
+ if(i < images.length){
   // Add 1 to Index
-  imageIndex++; 
+  i++; 
 } else{
-  imageIndex=0;
-
+  i=0;
 // Run function every x seconds
 setTimeout("changeImg()", time);
+
 }
+/
+
   
 
 
