@@ -21,12 +21,6 @@ let i = 0; 			// Start Point
 
 
 
-function prev(n){
-
-  if (i<=0) i=images.length;
-  i--;
-}
-prev(-1);
 
    // Change Image
 function changeImg(){
