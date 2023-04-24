@@ -18,7 +18,7 @@ let images=[
   
 
 let i = 0; 			// Start Point
-var time:3000;
+
 
 
 
@@ -42,7 +42,7 @@ function changeImg(){
   i = 0;
 
 // Run function every x seconds
-setTimeout("changeImg()", time);
+setTimeout("changeImg()", 3000);
 
 }
 
