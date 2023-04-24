@@ -21,7 +21,11 @@ let i = 0; 			// Start Point
 
 
 
+function prev(){
 
+  if (i<=0) i=images.length;
+  i--;
+}
 
 
    // Change Image
@@ -30,15 +34,17 @@ function changeImg(){
   
   document.getElementById("slide").src = images[i];//Get images from slide
   
-	// Change If Index Is Under Max
-	if(i < images.length - 1){
-	  // Add 1 to Index
-	  i++; 
-	} 
+	
 }
 
-
- 
+ // Check If Index Is Under Max
+ if(i < images.length - 1){
+  // Add 1 to Index
+  i++; 
+} else { 
+  // Reset Back To O
+  i = 0;
+}
 
 
 
