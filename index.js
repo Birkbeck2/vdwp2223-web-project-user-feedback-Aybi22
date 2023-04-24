@@ -15,7 +15,7 @@ var images=[
 	"images/img11.jpg"
 	];
 
-  var slider=document.querySelector("slide");
+  var slider=document.querySelector(".slide");
   var i=0;
 
 
