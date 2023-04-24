@@ -26,7 +26,7 @@ function prev(n){
   if (i<=0) i=images.length;
   i--;
 }
-prev(-1)
+prev(-1);
 
    // Change Image
 function changeImg(){
