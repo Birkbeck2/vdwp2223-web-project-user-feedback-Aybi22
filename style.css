@@ -30,12 +30,11 @@ html, body{
 }
 .slider{
 	
-	width:50%;
+	position:relative;
+    max-width:900px;
 }
  
-.img-box img{
-	width:70%;
-}
+
 
 button{
           border:none;/*Remove button border*/
