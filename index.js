@@ -3,7 +3,7 @@
 
 
 //Return the first element of the specified class
-  var sliderimg=document.querySelector('.slider-image');
+  var sliderimg=document.querySelector(".slider-image");
   
   //variable to store the images
   var images=[
@@ -17,7 +17,7 @@
     'img8.jpg',
     'img9.jpg',
     'img10.jpg',
-    'img11.jpg',
+    'img11.jpg'
     ];
   
   //Define starting point
