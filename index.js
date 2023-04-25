@@ -17,7 +17,7 @@
     'img8.jpg',
     'img9.jpg',
     'img10.jpg',
-    'img11.jpg'
+    'img11.jpg',
     ];
   
   //Define starting point
