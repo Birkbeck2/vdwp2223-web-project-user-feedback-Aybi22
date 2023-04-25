@@ -14,7 +14,7 @@
 
 //Create function for the previous button
 function prev() {
-  if (i<=0) i=images.length;//Define condition to display the previous image
+  if (i<=0) //Define condition to display the previous image
   i--;
   return showImg();//Declare a function to display images
   
