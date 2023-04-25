@@ -6,38 +6,21 @@
   var sliderimg=document.querySelector(".slider-image");
   
   //variable to store the images
-  var images=[
-    'img1.jpg',
-    'img2.jpg',
-    'img3.jpg',
-    'img4.jpg',
-    'img5.jpg',
-    'img6.jpg',
-    'img7.jpg',
-    'img8.jpg',
-    'img9.jpg',
-    'img10.jpg',
-    'img11.jpg'
-    ];
+  var images=['img1.jpg','img2.jpg','img3.jpg','img4.jpg','img5.jpg','img6.jpg','img7.jpg','img8.jpg','img9.jpg','img10.jpg',
+  'img11.jpg'];
   
   //Define starting point
   var i=0;
 
 //Create function for the previous button
 function prev() {
-if (i<=0) i=images.length;//Define condition to display the previous image
-i--;
-return showImg();//Declare a function to display images
+  if (i<=0) i=images.length;//Define condition to display the previous image
+  i--;
+  return showImg();//Declare a function to display images
+  
+  }
 
-}
 
-//Create function for the next button
-function next() {
-if(i>=images.length -1) i=-1;//Define condition to display the next image
-i++;//Add 1 when image number is bigger than the number of images in the variable
-return showImg();
-
-}
 		//Display images
 function showImg(){
 
