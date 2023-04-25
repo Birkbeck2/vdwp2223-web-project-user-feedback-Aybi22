@@ -95,16 +95,16 @@ let btn1=document.querySelector(".btn1");
 });
 
 //Create variable
-var pictures=['images/img14.jpg', 'images/img15.webp' ,'images/img16.jpg','images/img17.jpg','images/img18.jpg','images/img19.jpg'];
-var i=0;//Set starting point
-var time=3000;
+let pictures=['images/img14.jpg', 'images/img15.webp' ,'images/img16.jpg','images/img17.jpg','images/img18.jpg','images/img19.jpg'];
+let n=0;//Set starting point
+let time=3000;
 //Create function to display images
 function displayImg(){
-  document.picture.src=pictures[i];
-  if(i<pictures.length -1){
-    i++;// Add 1 to Index
+  document.picture.src=pictures[n];
+  if(n<pictures.length -1){
+    n++;// Add 1 to Index
   }else{
-    i=0;
+    n=0;
   }
   //Define function running time
   setTimeout("displayImg()", time);
