@@ -22,7 +22,7 @@ function prev() {
 //Create function for the next button
 function next() {
   if(i>=images.length -1) i=-1;//Define condition to display the next image
-  i++;//Add 1 when image number is bigger than the number of images in the variable
+  i++;//Add 1 when image number is bigger than  image lenght
   return showImg();
   
   }
