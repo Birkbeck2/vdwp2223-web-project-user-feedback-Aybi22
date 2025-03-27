@@ -76,10 +76,10 @@ btnElement.addEventListener("click",()=>{ //Create a function to display text wh
     if(selectedRating !=="") { //Create condition to trigger the function
 
 //Change the HTML element
-headingElement.innerHTML=`Thank you
-Feedback:${selectedRating} <br><br> 
+headingElement.innerHTML=`Thank you!
+ Feedback:${selectedRating} <br><br> 
 
-<p>you feedback is very important for us!</p>
+<p>you feedback is very important to us!</p>
 `
 
 }
