@@ -28,11 +28,13 @@ html, body{
            margin:60px auto;
            
 }
-.slide{
-    position:relative;
+.slider{
+	
+	position:relative;
     max-width:900px;
-   
 }
+ 
+
 
 button{
           border:none;/*Remove button border*/
