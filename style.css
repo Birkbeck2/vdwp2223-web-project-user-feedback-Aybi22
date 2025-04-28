@@ -45,6 +45,32 @@ button{
           width:200px;
 }
 
+
+button:hover {
+    background-color: #388e3c; /* darker green */
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+
+
+  .feedback-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .feedback-btn:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+  }
+
+
+
 /*Style previous button*/
 .left{
     position:absolute;
@@ -173,7 +199,7 @@ header{
        padding:5px;
         top:0;
         position:sticky;
-        background-color: pink;
+        background-color:#fff0f3;
         box-shadow: 2px 3px 4px black;
         z-index: 1;
 }
@@ -188,6 +214,7 @@ header{
        margin:10px auto;
        box-shadow:2px 3px 4px black;
        text-align:center;
+       font-weight:900;
        
        
 }
@@ -228,7 +255,7 @@ img{
 }
 
 footer{
-         background:pink;
+         background-color:#fff0f3;
          text-align:center;
          font-size:17px;
          font-weight:900;
