@@ -1,5 +1,108 @@
 
 
+function loadMeals(){
+
+fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast')
+  .then(res => res.json())
+  .then(data =>{
+console.log(data);
+let foodContainer=document.querySelector('.food-container');
+console.log(foodContainer);
+data.meals.forEach(meal=>{
+  let mealBox=document.createElement('div');
+  mealBox.innerHTML=
+  `
+ <div class="food-box">
+ <div class="food-box-content">
+  <div class="image">
+  <img src="${meal.strMealThumb}">
+  </div>
+   <h3>${meal.strMeal}</h3>
+   </div>
+  <button class="btn">view recipe</button>
+  </div>
+   `
+
+let searchInput=document.getElementById('.search-input')
+
+ let searchButton=document.getElementById('search-btn');
+searchButton.addEventListener('click',()=>{
+
+  const ingredient=searchInput.value.trim('').toLowercase();
+  if(ingredient===""){
+    alert('enter an ingredient');
+    return;
+  }
+  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${userIngredient}`)
+   .then(res=>res.json())
+   .then(data=>{
+    
+ if (data.meals) {
+        foodContainer.innerHTML = 
+        `
+       <div class="image">
+  <img src="${meal.strMealThumb}">
+  </div>
+   <h3>${meal.strMeal}</h3> 
+        
+        
+        `
+
+};
+});
+})
+
+
+
+
+
+
+
+
+     mealBox.addEventListener('click', () => {
+  // Fetch detailed info about the clicked meal
+  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
+    .then(res => res.json())
+    .then(detailData => {
+      const mealInfo = detailData.meals[0];
+    
+    let modal =document.querySelector('.modal');
+   
+    modal.innerHTML=
+    `
+    <div> ${mealInfo.strInstructions}</div>
+    `
+    
+    modal.classList.toggle('show-modal');
+    })
+  
+  })
+
+  
+foodContainer.appendChild(mealBox);
+
+  });
+});
+
+}
+
+loadMeals();
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+localStorage.getItem('likecount'); //localStorage.getItem only takes one argument 
+// — the key string.
+});
+
 
 
 //Return the first element of the specified class
@@ -67,6 +170,8 @@ function removeActive() {
 
 
 
+
+
 //Create a variable for selected ratings
 let selectedRating = "";
 
@@ -85,6 +190,66 @@ btnElement.addEventListener("click", () => { //Create a function to display text
   }
 
 });
+
+document.addEventListener('DOMContentLoaded',()=>{
+
+const ratings=document.querySelectorAll('.rating');
+
+ratings.forEach(rating=>{ 
+  const key = rating.dataset.key;//Each .rating div has a 
+  // data-key attribute which stores a unique key name for localStorage.
+// Find the <span class="count"> inside this emoji
+    const countSpan = rating.querySelector('.count');
+  const savedCount=parseInt(localStorage.getItem(key))||0;
+countSpan.textContent=savedCount;
+
+let emojis=rating.querySelector('.emoji');
+
+  emojis.addEventListener('click',()=>{
+    
+    
+    
+let textContainer=document.querySelector('.text-container');
+   
+// Get current count, convert to number
+      let currentCount = parseInt(countSpan.textContent) || 0;
+       // Increment count
+      currentCount++;
+// Update the text content with new count
+
+let key=rating.getAttribute('data-key');
+      countSpan.innerHTML = currentCount;
+textContainer.innerHTML=`${currentCount} people have selected ${key}`;
+if(currentCount===1){
+  textContainer.innerHTML=`${currentCount} people has selected ${key}`;
+}else if(key==="neutral"){
+  textContainer.innerHTML=`${currentCount} people have selected ${key}`;
+}
+    
+
+
+localStorage.setItem(key,currentCount);//he key (first argument) in localStorage.setItem must be a string
+    
+  countSpan.classList.add('bump');
+setTimeout(() => countSpan.classList.remove('bump'), 300);
+
+  
+  
+  })
+  });
+
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
 let btn1 = document.querySelector(".btn1");
@@ -112,6 +277,8 @@ function displayImg() {
 }
 // Run function when page loads
 window.onload = displayImg;
+
+
 
 
 

@@ -5,31 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="style.css"> <!--Link to css file-->
-   
+   <script src="https://kit.fontawesome.com/798e587ede.js" crossorigin="anonymous"></script>
     <title>webproject</title> <!--Define the title of the page-->
 </head>
 <!--Body starts here-->
 
 <body>
     <!--Header starts here-->
+    
+    <div class="modal"></div>
+    
+    
     <header>
     
          <div class="logo">
 
             <img src="images/chef.png">
          </div>
-        <h1 class="top-title">Webproject <span class="small">User feedback page</h1></div>
-        <div class="txt">
-
-            
-        </div>
-       
+        <h1 class="top-title">Webproject <span class="small">User feedback page</h1>
+        
       
     </header>
     <!--Header ends here-->
     
-    
-        
+    <main>
+        <h2>discover our mouthwatering dishes and leave your feedback</h2>
     <!--Define the page container-->
     <div class="page-container">
        
@@ -50,38 +50,45 @@
 <!--Container starts here-->
 
 <div class="container" id="container">
-
-        <div class="heading">
+ <div class="container-content"> 
+        
+    <div class="heading">
             <p>
-                Discover the menu and give your feedback by selecting an emoji and click on the green button 
+                Discover the menu and give your feedback by selecting 
+                an emoji and click on the green button 
                 to send your review
             </p>
 
         </div>
+
+        <p class="text-container"></p>
         
         <!-- Ratings container starts here-->
         <div class="ratings-container">
         
-            
-        <div class="rating">
+         
+        <div class="rating"  data-key="like">
             
            
             <img src="images/smile.png"  class="emoji">
-            <span class="title"> Like it</span>
-        
+            <span class="title"> Like <i class="fa-solid fa-thumbs-up"></i></span>
+        <span class="count">0</span>
         </div>
     
         
-        <div class="rating">
+        <div class="rating"    data-key="neutral">
             <img src="images/neutral.png"  class="emoji">
-        <span class="title"> Neutral</span>
-        </div>
+        <span class="title"> Neutral<i class="fa-solid fa-face-meh-blank"></i></span>
         
-        <div class="rating">
+    <span class="count">0</span>
+    
+    </div>
+        
+        <div class="rating"   data-key="dislike">
         
         <img src="images/sad.png"    class="emoji">
-        <span class="title">Do not like it</span>
-        
+        <span class="title">Dislike <i class="fa-solid fa-thumbs-down"></i> </span>
+       <span class="count">0</span>
     </div>
     
 </div>
@@ -92,42 +99,58 @@
 <button class="btn"  id="btn"> Share your feeling </button>
 
 </div>
+</div>
+</div>
+</div>
 
-<div class="text">
+<div class="search-section">
 
-    <p class="bold">want to see our special meals?</p>
-    
-    <button type="button" class="btn1">click here</button>
-    
-    <div class="pic">
-        <img name="picture"> 
-    
-    </div>
-        
-    </div>
-    
+<h2>find ingredients meals  for your  ingredients</h2>
 
+<input type="search"  id="search-input" placeholder="search by ingredients...">
+<button id="search-btn">search</button>
+<h3>your search results</h3>
+
+
+
+
+<div class="food-container">
+
+
+   
 </div>
 
 
 
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--End of container-->
 
 
-</div>
 
-
+</main>
 
 <!--Page container Stops here-->
-<footer>
-    copyright.2023
-</footer>
+
 
 <!--Add link to javascript file-->
 
 <script src="index.js"></script>
+
 
 
 
@@ -138,3 +161,16 @@
 
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
