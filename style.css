@@ -19,12 +19,12 @@ body{
 
 .food-container{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
-    max-width:100%;
+    grid-template-columns: repeat(4,1fr);
+    max-width:1200px;
     width:100%;
+    margin:auto;
     gap:11px;
-  
-  
+   
 }
 
 .food-container h3{
@@ -34,7 +34,7 @@ body{
 
 .food-container img{
     width:400px;
-    height:200px;
+    height:300px;
     display:block;
     object-fit:cover;
 }
@@ -107,7 +107,9 @@ z-index:1000;
     text-align:center;
 }
 
-
+.search-section{
+    margin:auto;
+}
 #search-input{
     text-align:center;
     padding:0.5rem;
@@ -118,6 +120,11 @@ z-index:1000;
 }
 #search-btn{
     padding:0.5rem;
+    background:seagreen;
+    color:white;
+    font-weight:900;
+    border:none;
+    
 }
 
 main{

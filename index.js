@@ -1,14 +1,46 @@
 
 
 function loadMeals(){
+let foodContainer=document.querySelector('.food-container');
+
 
 fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast')
   .then(res => res.json())
   .then(data =>{
-console.log(data);
-let foodContainer=document.querySelector('.food-container');
+displayMeals(data.meals);
+  });
+
+let searchInput=document.getElementById('search-input')
+
+ let searchButton=document.getElementById('search-btn');
+searchButton.addEventListener('click',()=>{
+
+  const ingredient=searchInput.value.trim().toLowerCase();
+  if(ingredient===""){
+    alert('enter an ingredient');
+   return;
+  }
+  fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}`)
+   .then(res=>res.json())
+   .then(data=>{
+    foodContainer.innerHTML='';
+ if (!data.meals) {
+ foodContainer.innerHTML=`<p>no results found</p>`;
+ return;
+ }
+ displayMeals(data.meals);
+   });
+  });
+
+
+
+
+
+  function displayMeals(meals){
+
+ foodContainer=document.querySelector('.food-container');
 console.log(foodContainer);
-data.meals.forEach(meal=>{
+meals.forEach(meal=>{
   let mealBox=document.createElement('div');
   mealBox.innerHTML=
   `
@@ -21,45 +53,11 @@ data.meals.forEach(meal=>{
    </div>
   <button class="btn">view recipe</button>
   </div>
-   `
-
-let searchInput=document.getElementById('.search-input')
-
- let searchButton=document.getElementById('search-btn');
-searchButton.addEventListener('click',()=>{
-
-  const ingredient=searchInput.value.trim('').toLowercase();
-  if(ingredient===""){
-    alert('enter an ingredient');
-    return;
-  }
-  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${userIngredient}`)
-   .then(res=>res.json())
-   .then(data=>{
-    
- if (data.meals) {
-        foodContainer.innerHTML = 
-        `
-       <div class="image">
-  <img src="${meal.strMealThumb}">
-  </div>
-   <h3>${meal.strMeal}</h3> 
-        
-        
-        `
-
-};
-});
-})
+   `;
 
 
-
-
-
-
-
-
-     mealBox.addEventListener('click', () => {
+ 
+ mealBox.addEventListener('click', () => {
   // Fetch detailed info about the clicked meal
   fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
     .then(res => res.json())
@@ -74,18 +72,22 @@ searchButton.addEventListener('click',()=>{
     `
     
     modal.classList.toggle('show-modal');
-    })
+    });
   
-  })
-
+  });
+  
   
 foodContainer.appendChild(mealBox);
 
   });
-});
+
+
+  
+  
+
 
 }
-
+}
 loadMeals();
 
 
