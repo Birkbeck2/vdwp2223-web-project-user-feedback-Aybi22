@@ -221,11 +221,11 @@ let textContainer=document.querySelector('.text-container');
 
 let key=rating.getAttribute('data-key');
       countSpan.innerHTML = currentCount;
-textContainer.innerHTML=`${currentCount} people have selected ${key}`;
+textContainer.innerHTML=`${currentCount} persons have selected ${key}`;
 if(currentCount===1){
-  textContainer.innerHTML=`${currentCount} people has selected ${key}`;
+  textContainer.innerHTML=`${currentCount} person has selected ${key}`;
 }else if(key==="neutral"){
-  textContainer.innerHTML=`${currentCount} people have selected ${key}`;
+  textContainer.innerHTML=`${currentCount} persona have selected ${key}`;
 }
     
 
