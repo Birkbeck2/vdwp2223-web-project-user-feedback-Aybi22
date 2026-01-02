@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Define the character encoding -->
+<head>
+    <meta charset="UTF-8"> <!--Define encoding-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"> <!--Link to css file-->
+   <script src="https://kit.fontawesome.com/798e587ede.js" crossorigin="anonymous"></script>
+    <title>webproject</title> <!--Define the title of the page-->
+</head>
+<!--Body starts here-->
+
+<body>
+   </body>
+
+
+
+
+   </html>
+
+
+
+
+
+
+
+     mealBox.addEventListener('click', () => {
+  // Fetch detailed info about the clicked meal
+  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal.idMeal}`)
+    .then(res => res.json())
+    .then(detailData => {
+      const mealInfo = detailData.meals[0];
+    
+    let modal =document.querySelector('.modal');
+   
+    modal.innerHTML=
+    `
+    <div> ${mealInfo.strInstructions}</div>
+    `
+    
+    modal.classList.toggle('show-modal');
+    });
+  
+  })
+
+
+
+
+  let searchButton=document.getElementById('search-btn');
+searchButton.addEventListener('click',()=>{
+
+  const userIngredient=document.getElementById('searchInput').value;
+  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${userIngredient}`)
+   .then(res=>res.json())
+   .then(data=>{
+    
+ if (data.meals) {
+        foodContainer.innerHTML = 
+        `
+       <div class="image">
+  <img src="${meal.strMealThumb}">
+  </div>
+   <h3>${meal.strMeal}</h3> 
+        
+        
+        `
+
+};
+});
+})
+
+
+
+
+
+
+
+
+
+});

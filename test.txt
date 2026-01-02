@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Define the character encoding -->
+<head>
+    <meta charset="UTF-8"> <!--Define encoding-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"> <!--Link to css file-->
+   <script src="https://kit.fontawesome.com/798e587ede.js" crossorigin="anonymous"></script>
+    <title>webproject</title> <!--Define the title of the page-->
+</head>
+<!--Body starts here-->
+
+<body>
+   </body>
+
+
+
+
+   </html>
