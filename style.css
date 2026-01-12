@@ -542,7 +542,7 @@ flex-direction:column;
 @media screen and (min-width:768px) and (max-width:1024px){
 .food-container{
 	display:grid;     
-	grid-template-columns: repeat(2,1fr);
+	grid-template-columns: repeat(2,200px);
 }
 .food-container .img{
 	width:auto;
