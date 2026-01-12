@@ -1,4 +1,4 @@
-*{
+&*{
     box-sizing:border-box; /*Include margin and padding in width and height*/
 }
 
@@ -17,6 +17,9 @@ body{
 
 }
 .food-box img{
+	max-width:400px;
+	width:100%;
+	height:auto;
 	border:2px solid red;
 }
 
@@ -547,8 +550,9 @@ flex-direction:column;
 	display:grid;     
 	grid-template-columns: repeat(2,200px);
 }
-.food-container .img{
-	width:auto;
+.food-box img{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
 }
 	.modal{
     font-size:0.8rem;
