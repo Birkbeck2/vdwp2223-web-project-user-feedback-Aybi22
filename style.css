@@ -541,9 +541,13 @@ flex-direction:column;
 
 @media screen and (min-width:768px) and (max-width:1024px){
 .food-container{
-    grid-template-columns: repeat(2,1fr);
+	display:grid;     
+	grid-template-columns: repeat(2,1fr);
 }
-  .modal{
+.food-container .img{
+	width:auto;
+}
+	.modal{
     font-size:0.8rem;
   }
 
