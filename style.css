@@ -16,6 +16,9 @@ body{
   flex-direction:column;
 
 }
+.food-box img{
+	border:2px solid red;
+}
 
 .food-container{
     display:grid;
