@@ -550,7 +550,7 @@ flex-direction:column;
 	display:grid;     
 	grid-template-columns: repeat(2,200px);
 }
-.food-box img{
+.food-box{
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
 }
