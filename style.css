@@ -29,6 +29,7 @@ body{
     max-width:1200px;
     width:100%;
     margin:auto;
+	place-items:center;
     gap:11px;
    
 }
