@@ -16,11 +16,9 @@ body{
   flex-direction:column;
 
 }
-.food-box img{
-	max-width:400px;
-	width:100%;
-	height:auto;
-	
+.food-box{
+	display:flex;
+	flex-direction:column;
 }
 
 .food-container{
