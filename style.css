@@ -514,6 +514,9 @@ footer{
         height:40px;
       
     }
+	#search-input{
+		width:50%;
+	}
 h2{
     font-size:1rem;
     width:80%;
