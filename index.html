@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Define the character encoding -->
+<head>
+    <meta charset="UTF-8"> <!--Define encoding-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css"> <!--Link to css file-->
+   <script src="https://kit.fontawesome.com/798e587ede.js" crossorigin="anonymous"></script>
+    <title>webproject</title> <!--Define the title of the page-->
+</head>
+<!--Body starts here-->
+
+<body>
+    <!--Header starts here-->
+    
+    <div class="modal"></div>
+    
+    
+    <header>
+    
+         
+        <h1 class="top-title">User feedback page</h1>
+        
+      
+    </header>
+    <!--Header ends here-->
+    
+    <main>
+        <h2>discover our mouthwatering dishes and leave your feedback</h2>
+    <!--Define the page container-->
+    <div class="page-container">
+       
+        <div class="slider">
+<div class="image-box">
+            <img src="images/img1.jpg" class="slider-image">
+</div>
+<!--Define next and previous button-->
+
+<div class="section">
+<button class="left"  onclick="prev()">Prev</button>
+<button class="right" onclick="next()">Next </button>
+</div>
+
+
+</div>
+
+<!--Container starts here-->
+
+<div class="container" id="container">
+ <div class="container-content"> 
+        
+    <div class="heading">
+            <p>
+                Discover the menu and give your feedback by selecting 
+                an emoji and click on the green button 
+                to send your review
+            </p>
+
+        </div>
+
+        <p class="text-container"></p>
+        
+        <!-- Ratings container starts here-->
+        <div class="ratings-container">
+        
+        <div class="rating"  data-key="like">
+            <img src="images/smile.png"  class="emoji">
+            <span class="title"> Like <i class="fa-solid fa-thumbs-up"></i></span>
+        <span class="count">0</span>
+        </div>
+    
+        <div class="rating"    data-key="neutral">
+            <img src="images/neutral.png"  class="emoji">
+        <span class="title"> Neutral<i class="fa-solid fa-face-meh-blank"></i></span>
+        
+    <span class="count">0</span>
+    
+    </div>
+        
+        <div class="rating"   data-key="dislike">
+        
+        <img src="images/sad.png"    class="emoji">
+        <span class="title">Dislike <i class="fa-solid fa-thumbs-down"></i> </span>
+       <span class="count">0</span>
+    </div>
+    
+</div>
+<!--End of rating container-->
+
+<div class="chef">
+    <img src="images/chef4.png">
+<button class="btn"  id="btn"> Share your feeling </button>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="search-section">
+
+<h2>find our delicious meals by ingredient</h2>
+
+<input type="search"  id="search-input" placeholder="search by ingredients...">
+<button id="search-btn">search</button>
+
+
+<h3>your search results</h3>
+</div>
+
+
+
+<div class="food-container">
+
+
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--End of container-->
+
+
+
+</main>
+
+<!--Page container Stops here-->
+
+
+<!--Add link to javascript file-->
+
+<script src="index.js"></script>
+
+
+
+
+
+</body>
+<!--Body ends here-->
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
