@@ -201,7 +201,8 @@ img{
     display:block;
  }
 .chef img{
-    width:150px;
+    max-width:150px;
+	with:100%;
     height:100px;
     display:block;
     object-fit:cover;
@@ -455,7 +456,8 @@ header{
 .heading p {
        font-size:0.9rem;
        color:white;
-	   padding:31px;
+	   max-width:60%;
+	   width:100%;
 	   font-weight:700
 }
 
