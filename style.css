@@ -195,6 +195,9 @@ img{
 	position:relative;
     
 }
+.text-container p{
+	font-size:1rem;
+}
 .slider img{
     width:700px;
     height:800px;
@@ -530,7 +533,9 @@ footer{
         display:flex;
         flex-direction: column;
     }
-
+.text-container p{
+	font-size:0.6rem;
+}
     .emoji{
         width:40px;
         height:40px;
