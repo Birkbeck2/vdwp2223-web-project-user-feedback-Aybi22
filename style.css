@@ -160,7 +160,7 @@ img{
            text-align: center;
            box-shadow:2px 4px 5px;
            background:#fff0f3;
-           height:800px;
+           min-height:800px;
            max-width:700px;
            width:100%;
            }
