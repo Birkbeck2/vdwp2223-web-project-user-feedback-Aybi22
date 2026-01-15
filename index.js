@@ -147,8 +147,8 @@ btnElement.addEventListener("click", () => {
     //Create condition to trigger the function
 
     //Change the HTML element
-    headingElement.innerHTML = `Thank you!
- your Feedback is:"${selectedRating}" <br><br> 
+    headingElement.innerHTML = `<p>Thank you!
+ your Feedback is:"${selectedRating}" </p> <br><br> 
 
 <p>you feedback is very important to us!</p>
 `;
