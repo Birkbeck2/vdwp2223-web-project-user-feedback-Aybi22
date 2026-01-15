@@ -168,6 +168,7 @@ img{
            gap:40px;/*Define space between flex items*/
            justify-content:center;/*Center the flex container*/
            padding:2rem;
+	       border:1px solid seagreen;
           
            
 }
