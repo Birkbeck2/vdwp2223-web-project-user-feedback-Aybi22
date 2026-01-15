@@ -450,18 +450,20 @@ header{
 
 .heading p {
        font-size:0.9rem;
-       background:seagreen;
-	   color:white;
+      color:white;
 	   font-weight:700
+}
+
+.heading{
+	 background:seagreen;
+	font-weight:700
        padding:11px;
        max-width:600px;
        width:100%;
        margin:10px auto;
        box-shadow:2px 3px 4px black;
-       text-align:center;
-       font-weight:600;
        
-       
+	   
 }
 .burger{
     color:#FFFFFF;
