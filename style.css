@@ -172,7 +172,7 @@ img{
            justify-content:center;/*Center the flex container*/
            padding:2rem;
 	       border:1px solid seagreen;
-           min-height:600px;
+          
            
 }
 
@@ -456,8 +456,9 @@ header{
 .heading p {
        font-size:0.9rem;
        color:white;
-	   max-width:60%;
+	   max-width:70%;
 	   width:100%;
+	   margin:auto;
 	   font-weight:700
 }
 
