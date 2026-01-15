@@ -31,6 +31,9 @@ body{
     gap:11px;
    
 }
+.text-container{
+	height:50px;
+}
 
 .food-container h3{
     font-size:0.8rem;
@@ -169,7 +172,7 @@ img{
            justify-content:center;/*Center the flex container*/
            padding:2rem;
 	       border:1px solid seagreen;
-          max-height:600px;
+           min-height:600px;
            
 }
 
@@ -561,6 +564,8 @@ flex-direction:column;
     margin-bottom:1rem;
     display:block;
 }
+	.ratings-container{
+		padding:21px;
 }
 
 
