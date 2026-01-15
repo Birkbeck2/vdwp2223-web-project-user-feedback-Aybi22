@@ -163,11 +163,11 @@ img{
 .ratings-container{
            display:flex; /*Create a flex container*/
            flex-wrap:nowrap;
-           gap:40px;/*Define space between flex items*/
+           gap:23px;/*Define space between flex items*/
            justify-content:center;/*Center the flex container*/
            padding:2rem;
 	       border:1px solid seagreen;
-	       height:300px;
+	       height:200px;
           
            
 }
