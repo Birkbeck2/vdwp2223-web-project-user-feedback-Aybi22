@@ -75,20 +75,15 @@ body{
    padding:33px;
    height:auto;
    line-height:1.8;
-  max-height: 80vh; /* 80% of viewport height */
-  overflow-y: auto;
- 
-  
-  
-  background: white;
-  transition:0.3s;
-
-position:fixed;
-z-index:1000;
-
-  transition: 0.3s ease;
- margin-left:-600px;
-  border-radius: 12px;
+   max-height: 80vh; /* 80% of viewport height */
+   overflow-y: auto;
+   background: white;
+   transition:0.3s;
+   position:fixed;
+   z-index:1000;
+   transition: 0.3s ease;
+   margin-left:-600px;
+   border-radius: 12px;
  
 }
 
@@ -160,7 +155,7 @@ img{
            text-align: center;
            box-shadow:2px 4px 5px;
            background:#fff0f3;
-           min-height:800px;
+           min-height:700px;
            max-width:700px;
            width:100%;
            }
