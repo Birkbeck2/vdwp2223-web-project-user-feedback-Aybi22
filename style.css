@@ -450,7 +450,9 @@ header{
 
 .heading p {
        font-size:0.9rem;
-       background:beige;
+       background:seagreen;
+	   color:white;
+	   font-weight:700
        padding:11px;
        max-width:600px;
        width:100%;
