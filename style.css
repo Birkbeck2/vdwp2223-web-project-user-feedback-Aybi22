@@ -169,7 +169,7 @@ img{
            justify-content:center;/*Center the flex container*/
            padding:2rem;
 	       border:1px solid seagreen;
-          height:600px;
+          max-height:600px;
            
 }
 
