@@ -179,7 +179,7 @@ img{
     display:flex;
     flex-direction:column;
 	align-items:center;
-    gap:21px;
+    gap:14px;
 
 }
 .container-infos p{
@@ -325,7 +325,7 @@ font-size:2rem;
 .rating{
       display:flex;
       flex-direction:column;
-      gap:34px;
+      gap:24px;
       cursor:pointer;
 
 }
