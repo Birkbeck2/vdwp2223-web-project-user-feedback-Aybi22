@@ -172,6 +172,7 @@ img{
            justify-content:center;/*Center the flex container*/
            padding:2rem;
 	       border:1px solid seagreen;
+	height:300px;
           
            
 }
@@ -427,7 +428,7 @@ header{
 .emoji {
     cursor: pointer;
     transition: transform 0.3s ease, color 0.3s ease;
-    width:70px;
+    max-width:70px;
     height:70px;
     object-fit:contain;
     display:inline-block;
@@ -464,7 +465,7 @@ header{
 
 .heading{
 	 background:seagreen;
-	  font-weight:700
+	  font-weight:700;
      
        max-width:600px;
        width:100%;
