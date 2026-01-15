@@ -188,7 +188,7 @@ img{
 .slider{
 	max-width:700px;
 	position:relative;
-    
+    height:700px;
 }
 .text-container p{
 	font-size:1rem;
