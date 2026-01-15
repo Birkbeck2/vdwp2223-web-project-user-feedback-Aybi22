@@ -148,7 +148,7 @@ btnElement.addEventListener("click", () => {
 
     //Change the HTML element
     headingElement.innerHTML = `<p>Thank you!
- your Feedback is:"${selectedRating}" </p> <br><br> 
+ your Feedback is:"${selectedRating}" </p> 
 
 <p>you feedback is very important to us!</p>
 `;
