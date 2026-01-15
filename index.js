@@ -179,11 +179,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let key = rating.getAttribute("data-key");
       countSpan.innerHTML = currentCount;
-      textContainer.innerHTML = `${currentCount} persons have selected ${key}`;
+      textContainer.innerHTML = `<p>${currentCount} persons have selected ${key}</p>`;
       if (currentCount === 1) {
-        textContainer.innerHTML = `${currentCount} person has selected ${key}`;
+        textContainer.innerHTML = `<p>${currentCount} person has selected ${key}</p>`;
       } else if (key === "neutral") {
-        textContainer.innerHTML = `${currentCount} persona have selected ${key}`;
+        textContainer.innerHTML = `<p>${currentCount} person have selected ${key}</p>`;
       }
 
       localStorage.setItem(key, currentCount); //he key (first argument) in localStorage.setItem must be a string
