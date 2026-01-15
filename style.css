@@ -196,7 +196,7 @@ img{
 }
 .slider img{
     width:700px;
-    height:800px;
+    height:700px;
     object-fit:cover;
     display:block;
  }
